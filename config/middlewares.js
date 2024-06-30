@@ -17,7 +17,8 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://clever-cv-ai-resume-builder.vercel.app/'], // Replace with your frontend URL
+      enabled: true,
+      origin: ['https://clever-cv-ai-resume-builder.vercel.app'], // Remove trailing slash
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     },
@@ -29,7 +30,3 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
-
-
-
-// https://clever-cv-ai-resume-builder.vercel.app/
