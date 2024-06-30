@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_resumes",
+  "info": {
+    "singularName": "user-resume",
+    "pluralName": "user-resumes",
+    "displayName": "User Resume",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "resumeId": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "email"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "summery": {
+      "type": "text"
+    },
+    "experience": {
+      "displayName": "ExperienceComponent",
+      "type": "component",
+      "repeatable": true,
+      "component": "objects.experience-component"
+    },
+    "email": {
+      "type": "email"
+    },
+    "education": {
+      "type": "component",
+      "repeatable": true,
+      "component": "education.education"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.skills"
+    },
+    "themeColor": {
+      "type": "string"
+    }
+  }
+}
